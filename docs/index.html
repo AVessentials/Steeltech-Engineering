@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>STEELTECH Engineering | Gasifier, Rolling Mill &amp; Furnace Spare Parts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./index_files/css2" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            transition: background 0.3s, color 0.2s;
+            overflow-x: hidden;
+        }
+        :root {
+            --bg-primary: #080c18;
+            --bg-secondary: #0c1325;
+            --bg-card: #0f1a2e;
+            --bg-card-hover: #14223b;
+            --border: #1a2d4f;
+            --border-light: #243b61;
+            --text-primary: #e0e6f0;
+            --text-muted: #7a8aa8;
+            --text-dim: #556680;
+            --accent: #00bcd4;
+            --accent-glow: rgba(0, 188, 212, 0.35);
+            --accent-dim: rgba(0, 188, 212, 0.08);
+            --accent-light: rgba(0, 188, 212, 0.12);
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            --error: #ff5252;
+        }
+        body.light {
+            --bg-primary: #f4f7fc;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --bg-card-hover: #f8fafd;
+            --border: #dce5f0;
+            --border-light: #cbd5e1;
+            --text-primary: #0a2540;
+            --text-muted: #4a5b6e;
+            --text-dim: #6c7f8f;
+            --accent: #00838f;
+            --accent-glow: rgba(0, 131, 143, 0.2);
+            --accent-dim: rgba(0, 131, 143, 0.05);
+            --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 28px; }
+        .section-title {
+            font-size: 2.4rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            position: relative;
+            padding-bottom: 18px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            border-radius: 4px;
+        }
+        .section-title span { color: var(--accent); }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1), transform 0.7s ease;
+        }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Reveal animation delay utility classes */
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: #000;
+            box-shadow: 0 2px 12px var(--accent-glow);
+        }
+        .btn-primary:hover { transform: translateY(-2px); filter: brightness(1.05); }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--accent);
+            color: var(--accent);
+        }
+        .btn-outline:hover { background: var(--accent-dim); transform: translateY(-2px); }
+        .btn-sm { padding: 8px 18px; font-size: 0.8rem; }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(8, 12, 24, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            transition: 0.3s;
+        }
+        body.light header { background: rgba(255, 255, 255, 0.92); }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 74px;
+        }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-icon svg { width: 42px; height: 42px; filter: drop-shadow(0 0 6px var(--accent-glow)); }
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .logo-text .line1 {
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+        .logo-text .line1 span { color: var(--accent); }
+        .brand-large, .brand-eng {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+        .brand-eng {
+            color: var(--accent);
+        }
+        .logo-text .line2 {
+            font-size: 0.55rem;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a { color: var(--text-muted); font-weight: 500; transition: color 0.2s; font-size: 0.9rem; text-decoration: none; }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+        .header-actions { display: flex; gap: 10px; align-items: center; }
+        .theme-toggle {
+            background: var(--accent-dim);
+            border: 1px solid var(--border);
+            border-radius: 40px;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+        .hamburger span { width: 26px; height: 2px; background: var(--accent); border-radius: 2px; }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: radial-gradient(ellipse at 30% 40%, rgba(0,188,212,0.05) 0%, transparent 60%);
+            padding-top: 74px;
+        }
+        #particleCanvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+        .hero-content { position: relative; z-index: 2; text-align: center; max-width: 880px; margin: 0 auto; }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-dim);
+            border: 1px solid var(--accent);
+            border-radius: 100px;
+            padding: 6px 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--accent);
+            margin-bottom: 28px;
+        }
+        .hero h1 { font-size: 3.8rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; }
+        .hero h1 .highlight { color: var(--accent); text-shadow: 0 0 12px var(--accent-glow); }
+        .hero-subtitle { font-size: 1.2rem; color: var(--text-muted); margin: 20px 0 16px; }
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+        }
+        .hero-stat h3 { font-size: 2rem; color: var(--accent); font-weight: 800; }
+        .hero-stat p { color: var(--text-muted); font-size: 0.85rem; }
+
+        /* About */
+        .about { background: var(--bg-secondary); padding: 80px 0; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+        .about-text h2 { font-size: 2rem; margin-bottom: 20px; color: var(--text-primary); }
+        .about-text p { color: var(--text-muted); margin-bottom: 20px; line-height: 1.6; }
+        .about-details { display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
+        .about-detail { display: flex; gap: 14px; align-items: center; padding: 12px 18px; background: var(--accent-dim); border-radius: 20px; border: 1px solid var(--border-light); }
+        .about-detail-icon { font-size: 1.6rem; }
+        .about-detail-text h4 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+        .about-detail-text p { margin: 0; font-size: 0.85rem; }
+        .about-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 32px;
+            transition: 0.25s;
+        }
+        .about-year-badge { display: inline-block; background: var(--accent-dim); border-radius: 40px; padding: 6px 16px; font-size: 0.8rem; margin: 16px 0; }
+        .owner-info h4 { margin-top: 16px; margin-bottom: 8px; color: var(--text-primary); }
+        .owner-info p { color: var(--text-muted); line-height: 1.6; }
+
+        /* Products - 4 columns */
+        .services { background: var(--bg-primary); padding: 80px 0; }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .search-bar input {
+            width: 320px;
+            padding: 12px 22px;
+            border-radius: 60px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            font-size: 0.9rem;
+        }
+        .search-bar button {
+            background: var(--accent);
+            border: none;
+            border-radius: 60px;
+            padding: 0 28px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 20px;
+            transition: 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+            box-shadow: var(--shadow);
+        }
+        .service-icon { font-size: 2.2rem; margin-bottom: 12px; }
+        .service-card h3 { font-size: 1.2rem; margin-bottom: 6px; }
+        .service-card p { color: var(--text-muted); font-size: 0.8rem; margin-bottom: 14px; }
+        .service-items {
+            list-style: none;
+            margin-bottom: 16px;
+            max-height: none;
+            overflow: visible;
+        }
+        .service-items li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            border-bottom: 1px dashed var(--border);
+            font-size: 0.75rem;
+        }
+        @media (max-width: 1200px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .services-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Gallery */
+        .gallery { background: var(--bg-secondary); padding: 80px 0; }
+        .gallery-category-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .gallery-category-tab {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 8px 20px;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 0.85rem;
+            color: var(--text-primary);
+        }
+        .gallery-category-tab.active {
+            background: var(--accent);
+            color: #000;
+            border-color: var(--accent);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            aspect-ratio: 4/3;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            position: relative;
+            cursor: pointer;
+            background: var(--bg-secondary);
+        }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+        .gallery-empty { grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 40px; }
+
+        /* Contact */
+        .contact { background: var(--bg-primary); padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+        .contact-info h3, .contact-form h3 { font-size: 1.5rem; margin-bottom: 16px; }
+        .contact-details { margin-top: 24px; }
+        .contact-detail { margin-bottom: 20px; color: var(--text-muted); line-height: 1.6; }
+        .contact-detail strong { color: var(--text-primary); }
+        .contact-form {
+            background: var(--bg-card);
+            border-radius: 28px;
+            padding: 32px;
+            border: 1px solid var(--border);
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 12px 16px;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            font-family: inherit;
+        }
+        .form-success {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 99;
+            border: none;
+            font-weight: bold;
+        }
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent);
+            padding: 12px 24px;
+            border-radius: 60px;
+            box-shadow: var(--shadow);
+            z-index: 2000;
+            opacity: 0;
+            transition: 0.3s;
+            pointer-events: none;
+            color: var(--text-primary);
+        }
+        .toast.show { opacity: 1; bottom: 40px; }
+        
+        /* Footer */
+        .footer-content {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 0 32px;
+        }
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            text-align: left;
+        }
+        .footer-grid div { flex: 1; min-width: 160px; }
+        .footer-grid h4 { margin-bottom: 16px; font-size: 1.1rem; color: var(--accent); }
+        .footer-grid p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
+        .footer-grid a { color: var(--text-muted); text-decoration: none; display: block; margin-bottom: 8px; transition: 0.2s; font-size: 0.9rem; }
+        .footer-grid a:hover { color: var(--accent); }
+        .copyright {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: fixed; top: 74px; left: 0; width: 100%; background: var(--bg-primary); flex-direction: column; padding: 24px; gap: 20px; border-bottom: 1px solid var(--border); }
+            .nav-links.active { display: flex; }
+            .hamburger { display: flex; }
+            .hero h1 { font-size: 2.5rem; }
+            .about-grid, .contact-grid { grid-template-columns: 1fr; }
+            .hero-stats { flex-wrap: wrap; gap: 24px; }
+            .footer-grid { flex-direction: column; text-align: center; align-items: center; }
+        }
+
+        /* --- EDITOR STYLES & MODALS --- */
+        .editor-only { display: none !important; }
+        body.editor-active .editor-only { display: inline-flex !important; }
+        body.editor-active .editor-only-block { display: block !important; }
+
+        /* Security Login Modal */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(8, 12, 24, 0.85);
+            backdrop-filter: blur(8px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 5000;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 32px;
+            border-radius: 24px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .modal-content h3 { margin-bottom: 12px; font-weight: 700; color: var(--text-primary); }
+        .modal-content p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px; }
+        .modal-content input {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            font-family: inherit;
+            outline: none;
+        }
+        .modal-buttons { display: flex; gap: 12px; justify-content: center; }
+
+        /* Card and Category Controls */
+        .card-editor-header { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 10px; }
+        .delete-cat-btn { background: var(--error); color: #fff; border: none; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 14px; transition: 0.2s; }
+        .delete-cat-btn:hover { transform: scale(1.15); }
+        .add-item-btn { margin-top: auto; background: var(--accent-light); border: 1px dashed var(--accent); color: var(--accent); width: 100%; padding: 8px; border-radius: 12px; cursor: pointer; font-size: 0.8rem; font-weight: 600; transition: 0.2s; }
+        .add-item-btn:hover { background: var(--accent-dim); }
+        .delete-item-btn { color: var(--error); background: none; border: none; cursor: pointer; font-size: 1.1rem; padding: 0 4px; display: flex; align-items: center; justify-content: center; }
+        .delete-item-btn:hover { transform: scale(1.2); }
+
+        /* Gallery Image Controls & Upload Area */
+        .gallery-upload-card {
+            background: var(--bg-card);
+            border: 2px dashed var(--border-light);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            aspect-ratio: 4/3;
+        }
+        .gallery-upload-card input[type="file"] { display: none; }
+        .gallery-upload-card label {
+            background: var(--accent);
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .gallery-upload-card label:hover { filter: brightness(1.1); }
+        .gallery-upload-card select {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            outline: none;
+            width: 100%;
+        }
+        .gallery-item-delete {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(255, 82, 82, 0.95);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+        .gallery-item-delete:hover { transform: scale(1.1); background: #ff5252; }
+    </style>
+</head>
+<body class="">
+
+<header id="header">
+    <div class="container nav-container">
+        <a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#" class="logo">
+            <div class="logo-icon"><svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="#00bcd4" stroke-width="1.5"></circle><circle cx="22" cy="22" r="12" stroke="#00bcd4"></circle><circle cx="22" cy="22" r="4" fill="#00bcd4"></circle></svg></div>
+            <div class="logo-text">
+                <span class="line1"><span class="brand-large">STEELTECH</span> <span class="brand-eng">Engineering</span></span>
+                <span class="line2">Since 2014 · Over a Decade of Excellence</span>
+            </div>
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#home">Home</a><a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#about">About</a><a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#services">Products</a><a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#gallery">Gallery</a><a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Light/Dark mode">🌙</button>
+            <button class="theme-toggle" id="editorToggleBtn" aria-label="Editor Settings" title="Editor Panel" style="background: var(--accent-dim); color: inherit;">🔑</button>
+        </div>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <canvas id="particleCanvas" width="1257" height="588"></canvas>
+    <div class="container hero-content">
+        <div class="hero-badge">⚙️ Established 2014 · Over a Decade of Excellence</div>
+        <h1>Heavy Engineering<br><span class="highlight">Spare Parts &amp; Supply</span></h1>
+        <p class="hero-subtitle">Gasifier | Rolling Mills | Furnace Spares | General Order</p>
+        <div class="hero-buttons">
+            <a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#services" class="btn btn-primary">Explore Products</a>
+            <a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#contact" class="btn btn-outline">Get Quote</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat"><h3>120+</h3><p>Components</p></div>
+            <div class="hero-stat"><h3>60+</h3><p>Clients</p></div>
+            <div class="hero-stat"><h3>24/7</h3><p>Support</p></div>
+            <div class="hero-stat"><h3>PAN India</h3><p>Delivery</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">About the <span>Company</span></h2>
+        <div class="about-grid">
+            <div class="about-text reveal active">
+                <h2>Your Trusted Partner in Heavy Engineering</h2>
+                <p>
+                    <strong>STEELTECH Engineering</strong> is a Kolkata-based industrial supply company 
+                    specializing in Gasifier parts, Rolling Mill components, Furnace spare parts, and 
+                    General Order supplies. Established in <strong>2014</strong>, we are committed to 
+                    delivering top-quality industrial products that keep your operations running smoothly.
+                </p>
+                <p>
+                    Under the leadership of <strong>STEELTECH Engineering</strong>, our company has built 
+                    a reputation for reliability, competitive pricing, and exceptional customer service 
+                    across West Bengal and the rest of India.
+                </p>
+                <div class="about-details">
+                    <div class="about-detail reveal reveal-delay-1 active">
+                        <div class="about-detail-icon" style="color: var(--accent);">✦</div>
+                        <div class="about-detail-text">
+                            <h4>Quality Assurance</h4>
+                            <p>Every product meets stringent industrial standards</p>
+                        </div>
+                    </div>
+                    <div class="about-detail reveal reveal-delay-2 active">
+                        <div class="about-detail-icon" style="color: var(--accent);">✦</div>
+                        <div class="about-detail-text">
+                            <h4>Pan-India Supply</h4>
+                            <p>Reliable delivery network across all states</p>
+                        </div>
+                    </div>
+                    <div class="about-detail reveal reveal-delay-3 active">
+                        <div class="about-detail-icon" style="color: var(--accent);">✦</div>
+                        <div class="about-detail-text">
+                            <h4>Expert Guidance</h4>
+                            <p>Technical support to help you choose the right parts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal reveal-delay-2 active">
+                <div class="about-card">
+                    <h3 style="margin-bottom: 16px; color: var(--text-primary);">🏢 About STEELTECH Engineering</h3>
+                    <p style="color:var(--text-dim); line-height:1.8;">
+                        <strong style="color: var(--text-primary); font-size:1.15rem;">STEELTECH Engineering</strong><br>
+                        Industrial Spare Parts &amp; Supply
+                    </p>
+                    <div class="about-year-badge">
+                        <span>📅</span> Established in <strong>2014</strong> · Over a Decade of Excellence
+                    </div>
+                    <p style="color:var(--text-muted); margin-top:18px; line-height:1.7;">
+                        With years of experience in the heavy engineering and industrial supply sector, 
+                        STEELTECH Engineering provides uncompromising quality and service to every client.
+                    </p>
+                    <div class="owner-info">
+                        <h4>📍 Our Address</h4>
+                        <p>
+                            STEELTECH Engineering<br>
+                            #14, Hare Street, Ground Floor<br>
+                            Kolkata - 700 001, West Bengal<br>
+                            INDIA
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">Our <span>Product Range</span></h2>
+        
+        <!-- Editor Controls (Products) -->
+        <div class="editor-only-block" style="margin-bottom: 24px; text-align: center; display: none;">
+            <button class="btn btn-outline btn-sm" onclick="addNewCategory()">➕ Add Category</button>
+            <button class="btn btn-outline btn-sm" onclick="resetProductsToDefault()" style="border-color: var(--error); color: var(--error); margin-left: 10px;">🔄 Reset to Default</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="productSearchInput" placeholder="🔍 Search product...">
+            <button id="searchProductBtn" class="btn btn-primary btn-sm" style="border-radius:60px;">Search</button>
+        </div>
+        <div class="services-grid" id="productsGrid">
+            <div class="service-card reveal active">
+                <div class="card-editor-header">
+                    <div class="service-icon">⚙️</div>
+                    
+                </div>
+                <h3>Gasifier Spare Parts</h3>
+                <p>Premium quality spares for coal &amp; biomass gasifier systems.</p>
+                <ul class="service-items">
+                    
+                    <li>
+                        <span>GASIFIER GRATE SET</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>CLUTCH PLATE SET</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>POKING HOLE SET</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>COAL FEEDER DRUM / ROTARY DRUM</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BURNER SET</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GASIFIER SLIDE WAY RING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>MAGNETIC BEARING/THRUST BEARING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>RACHET WHEEL (FOR CLUTCH PLATE)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BEARING BALLS - SLIDE WAY RING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>C.I. MOUNTING PLATE / BURNER PLATE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GASIFIER GEAR AND PENION</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>HOISTER MOTOR BODY / COVER</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>HOISTER SET</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>COAL FEEDER SHAFT</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>HOISTER WHEEL</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ASH TRAY GEAR BOX RING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ASH TRAY GEAR BOX PLATE/JAALI</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>POCKING HOLE SET FOR DOUBLE STAGE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>PRESSURE GUAGES</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>TEMPERATURE GUAGES</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>WATER LEVEL GAUGE - GLASS</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>THERMOCOUPLE -K TYPE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>RESISTANCE / THERMOCOUPLE - PT 100</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BURNER JAALI</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>CLUTCH PLATE BRAKE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GASIFIER OIL CAN</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>COAL DUMPER</span>
+                        
+                    </li>
+                
+                </ul>
+                
+            </div>
+            
+            <div class="service-card reveal active">
+                <div class="card-editor-header">
+                    <div class="service-icon">⚙️</div>
+                    
+                </div>
+                <h3>Rolling Mill Spares</h3>
+                <p>Durable components for steel rolling mill operations.</p>
+                <ul class="service-items">
+                    
+                    <li>
+                        <span>ENTRY GUIDE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ROLLING MILL COUPLING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>UNIVERSAL COUPLING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>CROSS COUPLING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>C.I. COUPLING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>UNIVERSAL SPINDLE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ROTARY SHARING BLADE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>C.I. SKID STAND &amp; C.I. SKID END CLOSE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>HCHCR NOZZLE (HIGH CARBON HIGH CHROMIUM)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BEARING CHOCK ASSEMBLY</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>CHOCK NUT &amp; HALF NUT</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>LUBRING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>SPROCKET</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BEARING BLOCK</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>LILON PAD</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>FIBER BEARING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ROLLER TWISTER PIPE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ROUGHING SPINDLE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ADOPTER COUPLING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ROLLER GUIDE BOX</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>THERMEX NOZZLE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>TESTING MACHINE JOE &amp; ANY PARTS</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>WOBBLERS HEAD</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GUIDE BOX SPARE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GUIDE BOX REEL</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>C.I. GRIDE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GEAR COUPLING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>PIN BUSH COUPLING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>TIRE COUPLING</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GEAR BOX</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ROTARY SHARING BLADE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>FLYING SHARING BLADE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>COLD SHARING BLADE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>PLUMMER BLOCK</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>PINCH ROLL</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>SPRAY NOZZLE</span>
+                        
+                    </li>
+                
+                </ul>
+                
+            </div>
+            
+            <div class="service-card reveal active">
+                <div class="card-editor-header">
+                    <div class="service-icon">⚙️</div>
+                    
+                </div>
+                <h3>Furnace Spare Parts</h3>
+                <p>Reliable furnace components for industrial heating applications.</p>
+                <ul class="service-items">
+                    
+                    <li>
+                        <span>FURNACE GATE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>KNIVE VALVE WITH SS PLATE (RUBBER SEAL)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BUTTERFLY VALVE WITH SS PLATE (RUBBER SEAL)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BUTTERFLY VALVE AIR WITH SS PLATE (RUBBER SEAL)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BALL VALVE (SCREWED &amp; FLANGED)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GATE VALVE (SCREWED &amp; FLANGED)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>WHEEL VALVE (SCREWED &amp; FLANGED)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>N.L.T.P. with (SCREWED, GLAND SCREWED &amp; GLAND FLANGED)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>AUTOMATIC GATE VALVE (FOR STEAM DRUM)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>STRAINER 'Y' TYPE VALVE (SCREWED &amp; FLANGED)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>FOOT VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GLOBE STOP VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BIP TAP</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>STOP VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ANTI WASTE TAP</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ANGLE CHECK VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>VENT HOOD</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>DIP CAP</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>TERRACE VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>STEAM VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>QUICK BLOCK VALVE (GASIFIER MAIN BODY)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>VENT VALVE DN (AT PIPELINE END)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>BLOW DOWN VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>PULP VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>SOLENOID VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>SOLENOID VALVE (COAL)</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>CYCLONE GATE VALVE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>OIL FILTER</span>
+                        
+                    </li>
+                
+                </ul>
+                
+            </div>
+            
+            <div class="service-card reveal active">
+                <div class="card-editor-header">
+                    <div class="service-icon">⚙️</div>
+                    
+                </div>
+                <h3>General Order Supplies</h3>
+                <p>Wide range of industrial general order items.</p>
+                <ul class="service-items">
+                    
+                    <li>
+                        <span>GENERATOR SET (5 KVA TO 1000 KVA), MAKE: Any make per your Specification</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>CHAIN PULLY BLOCK</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>DRILL MACHINE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GREESE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>GRINDING MACHINE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>JACK</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>SAFETY BELT</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>SAFETY HAND GLOVES</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>WELDING MACHINE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>HILTI MACHINE</span>
+                        
+                    </li>
+                
+                    <li>
+                        <span>ANY OTHER HARDWARE ITEMS</span>
+                        
+                    </li>
+                
+                </ul>
+                
+            </div>
+            </div>
+    </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <h2 class="section-title">Photo <span>Gallery</span></h2>
+        <div class="gallery-category-tabs" id="categoryTabs"><button class="gallery-category-tab" data-cat="all">All Photos <span id="count-all">0</span></button><button class="gallery-category-tab" data-cat="Gasifier Spares">Gasifier Spares <span id="count-GasifierSpares">0</span></button><button class="gallery-category-tab" data-cat="Rolling Mill Parts">Rolling Mill Parts <span id="count-RollingMillParts">0</span></button><button class="gallery-category-tab active" data-cat="Furnace Parts">Furnace Parts <span id="count-FurnaceParts">0</span></button><button class="gallery-category-tab" data-cat="General Items">General Items <span id="count-GeneralItems">0</span></button><button class="gallery-category-tab" data-cat="Others">Others <span id="count-Others">0</span></button></div>
+        <div class="gallery-grid" id="galleryGrid"><div class="gallery-empty">📭 No photos in "Furnace Parts".</div></div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">Get in <span>Touch</span></h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>We're Here to Help</h3>
+                <p style="color: var(--text-muted); line-height: 1.6;">Have a question about our products or need a quote? Reach out to us — we respond promptly.</p>
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <strong>📍 Office Address</strong><br>
+                        STEELTECH Engineering<br>
+                        #14, Hare Street, Ground Floor<br>
+                        Kolkata - 700 001, West Bengal<br>
+                        INDIA
+                    </div>
+                    <div class="contact-detail">
+                        <strong>📞 Phone</strong><br>
+                        <a href="tel:+918820360561" style="color:var(--accent); text-decoration:none;">+91 88203 60561</a><br>
+                        <a href="tel:+918017960512" style="color:var(--accent); text-decoration:none;">+91 80179 60512</a>
+                    </div>
+                    <div class="contact-detail">
+                        <strong>✉️ Email</strong><br>
+                        <a href="mailto:contactsteeltech@gmail.com" style="color:var(--accent); text-decoration:none;">contactsteeltech@gmail.com</a>
+                    </div>
+                    <div class="contact-detail">
+                        <strong>🕐 Business Hours</strong><br>
+                        Mon – Sat: 9:00 AM – 7:00 PM<br>
+                        Sunday: By appointment
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Fill in the form and we'll get back to you promptly.</p>
+                <form id="contactForm">
+                    <div class="form-group"><input type="text" id="formName" placeholder="Your Name *" required=""></div>
+                    <div class="form-group"><input type="email" id="formEmail" placeholder="Email Address *" required=""></div>
+                    <div class="form-group"><input type="tel" id="formPhone" placeholder="Phone Number"></div>
+                    <div class="form-group"><textarea id="formMsg" rows="4" placeholder="Message *" required=""></textarea></div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; justify-content: center;">Send Message</button>
+                </form>
+                <div id="formSuccess" style="display:none;" class="form-success">✅ Message ready! Your email client will open.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer-content">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h4>STEELTECH Engineering</h4>
+                <p>Your trusted partner for Gasifier, Rolling Mill &amp; Furnace spare parts. PAN India delivery. Est. 2014. <strong>Over a Decade of Excellence</strong>.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#home">Home</a>
+                <a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#about">About</a>
+                <a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#services">Products</a>
+                <a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#gallery">Gallery</a>
+                <a href="file:///E:/Ajay/AI/Ready%20to%20Sell_AJAY/docs/index.html#contact">Contact</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="tel:+918820360561">+91 88203 60561</a>
+                <a href="mailto:contactsteeltech@gmail.com">contactsteeltech@gmail.com</a>
+                <p style="color: var(--text-muted); margin-top: 8px;">#14, Hare Street, Kolkata</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <div class="container">© 2026 STEELTECH Engineering. All Rights Reserved. | Over a Decade of Excellence</div>
+</div>
+
+<button class="back-to-top visible" id="backToTop">↑</button>
+<div id="toast" class="toast">Signed out of Editor Mode</div>
+
+<!-- Editor Password Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <h3>Editor Panel Access</h3>
+        <p>Please enter the management key to edit items in Product Range or Photo Gallery.</p>
+        <input type="password" id="passwordInput" placeholder="Password Key">
+        <div class="modal-buttons">
+            <button class="btn btn-primary btn-sm" onclick="attemptLogin()">Log In</button>
+            <button class="btn btn-outline btn-sm" onclick="closeLoginModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ---------- PRODUCT DATA ----------
+    const DEFAULT_PRODUCTS = [
+        { icon: "⚙️", title: "Gasifier Spare Parts", desc: "Premium spares for coal & biomass gasifiers", items: ["GASIFIER GRATE SET","CLUTCH PLATE SET","POKING HOLE SET","COAL FEEDER DRUM / ROTARY DRUM","BURNER SET","GASIFIER SLIDE WAY RING","MAGNETIC BEARING/THRUST BEARING","RACHET WHEEL","BEARING BALLS - SLIDE WAY RING","C.I. MOUNTING PLATE","GASIFIER GEAR AND PENION","HOISTER MOTOR BODY","HOISTER SET","COAL FEEDER SHAFT","HOISTER WHEEL","ASH TRAY GEAR BOX RING","ASH TRAY GEAR BOX PLATE","POCKING HOLE SET DOUBLE STAGE","PRESSURE GUAGES","TEMPERATURE GUAGES","WATER LEVEL GAUGE","THERMOCOUPLE -K TYPE","RESISTANCE PT100","BURNER JAALI","CLUTCH PLATE BRAKE","GASIFIER OIL CAN","COAL DUMPER"] },
+        { icon: "⚙️", title: "Rolling Mill Spares", desc: "Heavy-duty rolling mill components", items: ["ENTRY GUIDE","ROLLING MILL COUPLING","UNIVERSAL COUPLING","CROSS COUPLING","C.I. COUPLING","UNIVERSAL SPINDLE","ROTARY SHARING BLADE","C.I. SKID STAND & CLOSE","HCHCR NOZZLE","BEARING CHOCK ASSEMBLY","CHOCK NUT & HALF NUT","LUBRING","SPROCKET","BEARING BLOCK","LILON PAD","FIBER BEARING","ROLLER TWISTER PIPE","ROUGHING SPINDLE","ADOPTER COUPLING","ROLLER GUIDE BOX","THERMEX NOZZLE","TESTING MACHINE JOE","WOBBLERS HEAD","GUIDE BOX SPARE","GUIDE BOX REEL","C.I. GRIDE","GEAR COUPLING","PIN BUSH COUPLING","TIRE COUPLING","GEAR BOX","FLYING SHARING BLADE","COLD SHARING BLADE","PLUMMER BLOCK","PINCH ROLL","SPRAY NOZZLE"] },
+        { icon: "🔥", title: "Furnace Spare Parts", desc: "Industrial furnace components & valves", items: ["FURNACE GATE","KNIVE VALVE SS PLATE","BUTTERFLY VALVE","BALL VALVE","GATE VALVE","WHEEL VALVE","N.L.T.P.","AUTOMATIC GATE VALVE","STRAINER Y TYPE","FOOT VALVE","GLOBE STOP VALVE","BIP TAP","STOP VALVE","ANGLE CHECK VALVE","VENT HOOD","DIP CAP","TERRACE VALVE","STEAM VALVE","QUICK BLOCK VALVE","VENT VALVE DN","BLOW DOWN VALVE","PULP VALVE","SOLENOID VALVE","CYCLONE GATE VALVE","OIL FILTER"] },
+        { icon: "📦", title: "General Order Supplies", desc: "Hardware, tools & industrial GO items", items: ["GENERATOR SET (5KVA-1000KVA)","CHAIN PULLY BLOCK","DRILL MACHINE","GREESE","GRINDING MACHINE","JACK","SAFETY BELT","SAFETY HAND GLOVES","WELDING MACHINE","HILTI MACHINE","ANY OTHER HARDWARE ITEMS"] }
+    ];
+    let productsData = [];
+    let currentFilter = "";
+
+    function loadProducts() { 
+        let saved = localStorage.getItem('steeltech_products'); 
+        if(saved) productsData = JSON.parse(saved); 
+        else productsData = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS)); 
+        renderProducts(); 
+    }
+
+    function renderProducts() {
+        const grid = document.getElementById('productsGrid'); 
+        if(!grid) return;
+        let filteredData = productsData;
+        if(currentFilter.trim() !== "") {
+            const searchTerm = currentFilter.toLowerCase();
+            filteredData = productsData.map(category => ({
+                ...category,
+                items: category.items.filter(item => item.toLowerCase().includes(searchTerm))
+            })).filter(category => category.items.length > 0);
+        }
+        if(filteredData.length === 0) { 
+            grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-muted);">No products match "${currentFilter}"</div>`; 
+            return; 
+        }
+        grid.innerHTML = filteredData.map((p) => {
+            const catTitle = p.title;
+            const itemsHtml = p.items.map((item) => {
+                const deleteItemBtn = isEditor ? `<button class="delete-item-btn" onclick="deleteProductItem('${escapeHtml(catTitle)}', '${escapeHtml(item)}')" title="Delete Item">×</button>` : '';
+                return `
+                    <li>
+                        <span>${escapeHtml(item)}</span>
+                        ${deleteItemBtn}
+                    </li>
+                `;
+            }).join('');
+
+            const deleteCatBtn = isEditor ? `<button class="delete-cat-btn" onclick="deleteCategory('${escapeHtml(catTitle)}')" title="Delete Category">×</button>` : '';
+            const addItemBtn = isEditor ? `<button class="add-item-btn" onclick="addProductItem('${escapeHtml(catTitle)}')">➕ Add Item</button>` : '';
+
+            return `
+            <div class="service-card reveal active">
+                <div class="card-editor-header">
+                    <div class="service-icon">${p.icon}</div>
+                    ${deleteCatBtn}
+                </div>
+                <h3>${escapeHtml(p.title)}</h3>
+                <p>${escapeHtml(p.desc)}</p>
+                <ul class="service-items">
+                    ${itemsHtml}
+                </ul>
+                ${addItemBtn}
+            </div>
+            `;
+        }).join('');
+    }
+
+    function filterProducts() { 
+        currentFilter = document.getElementById('productSearchInput').value; 
+        renderProducts(); 
+    }
+
+    document.getElementById('searchProductBtn')?.addEventListener('click', filterProducts);
+    document.getElementById('productSearchInput')?.addEventListener('keyup', (e) => { if(e.key === 'Enter') filterProducts(); });
+
+    // ---------- PRODUCT MANAGEMENT ACTIONS (EDITOR ONLY) ----------
+    window.deleteCategory = function(title) {
+        if (confirm(`Are you sure you want to delete the category "${title}"?`)) {
+            productsData = productsData.filter(c => c.title !== title);
+            saveProducts();
+        }
+    };
+
+    window.addProductItem = function(title) {
+        let newItem = prompt("Enter new item/component name:");
+        if (newItem && newItem.trim() !== "") {
+            let cat = productsData.find(c => c.title === title);
+            if (cat) {
+                cat.items.push(newItem.trim());
+                saveProducts();
+            }
+        }
+    };
+
+    window.deleteProductItem = function(catTitle, item) {
+        let cat = productsData.find(c => c.title === catTitle);
+        if (cat) {
+            cat.items = cat.items.filter(i => i !== item);
+            saveProducts();
+        }
+    };
+
+    window.addNewCategory = function() {
+        let title = prompt("Enter new category name:");
+        if (!title) return;
+        let desc = prompt("Enter short description:");
+        let icon = prompt("Enter category emoji icon (e.g., ⚙️, 🔥, 📦):") || "⚙️";
+        
+        productsData.push({
+            icon: icon,
+            title: title,
+            desc: desc,
+            items: []
+        });
+        saveProducts();
+    };
+
+    window.resetProductsToDefault = function() {
+        if (confirm("Reset everything to standard list? Your custom products will be lost.")) {
+            productsData = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+            saveProducts();
+        }
+    };
+
+    function saveProducts() {
+        localStorage.setItem('steeltech_products', JSON.stringify(productsData));
+        renderProducts();
+        showToast("Products synchronized!");
+    }
+
+
+    // ---------- GALLERY ----------
+    let photos = [];
+    let activeCat = 'Furnace Parts';
+    const categories = ['Gasifier Spares', 'Rolling Mill Parts', 'Furnace Parts', 'General Items', 'Others'];
+    const STORAGE_KEY = 'steeltech_gallery_compressed';
+
+    function loadGallery() { 
+        let saved = localStorage.getItem(STORAGE_KEY); 
+        if(saved) photos = JSON.parse(saved); 
+        else photos = []; 
+        updateCategoryCounts(); 
+        renderGallery(); 
+    }
+
+    function updateCategoryCounts() {
+        categories.forEach(cat => { 
+            let cnt = photos.filter(p => p.category === cat).length; 
+            let el = document.getElementById(`count-${cat.replace(/\s/g,'')}`); 
+            if(el) el.innerText = cnt; 
+        });
+        let total = photos.length; 
+        let allEl = document.getElementById('count-all'); 
+        if(allEl) allEl.innerText = total;
+    }
+
+    function renderGallery() {
+        let filtered = activeCat === 'all' ? photos : photos.filter(p => p.category === activeCat);
+        let grid = document.getElementById('galleryGrid');
+        if(!grid) return;
+        
+        let uploadCardHtml = '';
+        if (isEditor) {
+            uploadCardHtml = `
+            <div class="gallery-upload-card">
+                <span style="font-size: 1.8rem;">📸</span>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Add Photo to Gallery</p>
+                <select id="uploadCategory">
+                    ${categories.map(cat => `<option value="${cat}" ${cat === activeCat ? 'selected' : ''}>${cat}</option>`).join('')}
+                </select>
+                <label for="galleryFileInput">Choose File</label>
+                <input type="file" id="galleryFileInput" accept="image/*" onchange="triggerImageUpload(this)">
+            </div>
+            `;
+        }
+
+        if(filtered.length === 0 && !isEditor) { 
+            grid.innerHTML = `<div class="gallery-empty">📭 No photos in "${activeCat}".</div>`; 
+            return; 
+        }
+
+        grid.innerHTML = uploadCardHtml + filtered.map((photo, idx) => {
+            let realIdx = photos.findIndex(p => p.id === photo.id);
+            const deleteBtn = isEditor ? `<button class="gallery-item-delete" onclick="deleteGalleryPhoto('${photo.id}')" title="Delete Image">×</button>` : '';
+            return `
+            <div class="gallery-item">
+                ${deleteBtn}
+                <img src="${photo.data}" alt="${escapeHtml(photo.name)}" onclick="openLightbox(${realIdx})">
+                <div style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); border-radius:20px; padding:2px 10px; font-size:10px; color: #fff;">
+                    ${escapeHtml(photo.category)}
+                </div>
+            </div>`;
+        }).join('');
+    }
+
+    window.openLightbox = function(idx) { 
+        let p = photos[idx]; 
+        if(p) { 
+            let lb = document.createElement('div'); 
+            lb.className='lightbox'; 
+            lb.style.cssText='position:fixed; inset:0; background:rgba(0,0,0,0.95); display:flex; align-items:center; justify-content:center; z-index:3000; cursor:pointer;'; 
+            lb.onclick=()=>lb.remove(); 
+            let img = document.createElement('img'); 
+            img.src=p.data; 
+            img.style.maxWidth='90%'; 
+            img.style.maxHeight='90%'; 
+            img.style.borderRadius='12px';
+            lb.appendChild(img); 
+            document.body.appendChild(lb); 
+        } 
+    };
+
+    function renderCategoryTabs() {
+        let tabsHtml = `<button class="gallery-category-tab" data-cat="all">All Photos <span id="count-all">0</span></button>`;
+        categories.forEach(cat => { 
+            tabsHtml += `<button class="gallery-category-tab" data-cat="${cat}">${cat} <span id="count-${cat.replace(/\s/g,'')}">0</span></button>`; 
+        });
+        document.getElementById('categoryTabs').innerHTML = tabsHtml;
+        document.querySelectorAll('.gallery-category-tab').forEach(btn => btn.addEventListener('click', (e) => {
+            document.querySelectorAll('.gallery-category-tab').forEach(b=>b.classList.remove('active'));
+            btn.classList.add('active'); 
+            activeCat = btn.getAttribute('data-cat'); 
+            renderGallery();
+        }));
+        
+        const defaultTab = document.querySelector('.gallery-category-tab[data-cat="Furnace Parts"]');
+        if(defaultTab) {
+            defaultTab.classList.add('active');
+            activeCat = 'Furnace Parts';
+        }
+        updateCategoryCounts(); 
+        renderGallery();
+    }
+
+    // ---------- GALLERY MANAGEMENT (EDITOR ONLY) ----------
+    window.triggerImageUpload = function(input) {
+        if (input.files && input.files[0]) {
+            const file = input.files[0];
+            const category = document.getElementById('uploadCategory').value;
+            
+            compressAndProcessImage(file, category, (compressedBase64) => {
+                const newPhoto = {
+                    id: 'photo_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9),
+                    name: file.name,
+                    category: category,
+                    data: compressedBase64
+                };
+                photos.push(newPhoto);
+                saveGallery();
+            });
+            input.value = '';
+        }
+    };
+
+    window.deleteGalleryPhoto = function(id) {
+        if (confirm("Are you sure you want to delete this photo from the gallery?")) {
+            photos = photos.filter(p => p.id !== id);
+            saveGallery();
+        }
+    };
+
+    function saveGallery() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(photos));
+        updateCategoryCounts();
+        renderGallery();
+        showToast("Gallery updated!");
+    }
+
+    // Client-side visual optimization so LocalStorage limits are never crossed
+    function compressAndProcessImage(file, category, callback) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const img = new Image();
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                let width = img.width;
+                let height = img.height;
+                const MAX_WIDTH = 500;
+                const MAX_HEIGHT = 500;
+                
+                if (width > height) {
+                    if (width > MAX_WIDTH) {
+                        height *= MAX_WIDTH / width;
+                        width = MAX_WIDTH;
+                    }
+                } else {
+                    if (height > MAX_HEIGHT) {
+                        width *= MAX_HEIGHT / height;
+                        height = MAX_HEIGHT;
+                    }
+                }
+                canvas.width = width;
+                canvas.height = height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, width, height);
+                const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.65);
+                callback(compressedDataUrl);
+            };
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+
+
+    // ---------- THEME HANDLING ----------
+    function initTheme() { 
+        let theme = localStorage.getItem('theme'); 
+        if(theme==='light') document.body.classList.add('light'); 
+        else document.body.classList.remove('light'); 
+        updateThemeIcon(); 
+    }
+
+    function toggleTheme() { 
+        document.body.classList.toggle('light'); 
+        localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark'); 
+        updateThemeIcon(); 
+    }
+
+    function updateThemeIcon() { 
+        let btn = document.getElementById('themeToggle'); 
+        if(btn) btn.innerText = document.body.classList.contains('light') ? '🌞' : '🌙'; 
+    }
+
+    function escapeHtml(str) { 
+        return String(str).replace(/[&<>]/g, function(m){ 
+            if(m==='&') return '&amp;'; 
+            if(m==='<') return '&lt;'; 
+            if(m==='>') return '&gt;'; 
+            return m;
+        }); 
+    }
+
+    let toastTimer; 
+    function showToast(msg) { 
+        let t=document.getElementById('toast'); 
+        t.innerText=msg; 
+        t.classList.add('show'); 
+        clearTimeout(toastTimer); 
+        toastTimer=setTimeout(()=>t.classList.remove('show'),2800); 
+    }
+
+
+    // ---------- SECURE EDITOR MODE SESSIONS ----------
+    const SECURITY_PHRASE = "steeltech2014"; 
+    let isEditor = false;
+
+    function initEditorMode() {
+        isEditor = localStorage.getItem('steeltech_editor_logged') === 'true';
+        updateEditorUI();
+    }
+
+    function updateEditorUI() {
+        const btn = document.getElementById('editorToggleBtn');
+        if (isEditor) {
+            document.body.classList.add('editor-active');
+            if (btn) {
+                btn.innerText = '🔓';
+                btn.style.background = 'var(--accent)';
+                btn.style.color = '#000';
+            }
+        } else {
+            document.body.classList.remove('editor-active');
+            if (btn) {
+                btn.innerText = '🔑';
+                btn.style.background = 'var(--accent-dim)';
+                btn.style.color = 'inherit';
+            }
+        }
+        renderProducts();
+        renderGallery();
+        updateCategoryCounts();
+    }
+
+    window.attemptLogin = function() {
+        const pass = document.getElementById('passwordInput').value;
+        if (pass === SECURITY_PHRASE) {
+            isEditor = true;
+            localStorage.setItem('steeltech_editor_logged', 'true');
+            showToast('Editor Authorized');
+            closeLoginModal();
+            updateEditorUI();
+        } else {
+            showToast('Security Key Incorrect');
+        }
+    };
+
+    window.closeLoginModal = function() {
+        document.getElementById('loginModal').classList.remove('active');
+        document.getElementById('passwordInput').value = '';
+    };
+
+    function openLoginModal() {
+        if (isEditor) {
+            isEditor = false;
+            localStorage.removeItem('steeltech_editor_logged');
+            showToast('Signed out of Editor Mode');
+            updateEditorUI();
+        } else {
+            document.getElementById('loginModal').classList.add('active');
+            document.getElementById('passwordInput').focus();
+        }
+    }
+
+    document.getElementById('editorToggleBtn')?.addEventListener('click', openLoginModal);
+    document.getElementById('passwordInput')?.addEventListener('keyup', (e) => { if(e.key === 'Enter') attemptLogin(); });
+
+
+    // ---------- SCROLL OBSERVER (REVEAL) ----------
+    function initScrollReveal() {
+        const observerOptions = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }
+
+    // ---------- CONTACT FORM ----------
+    document.getElementById('contactForm')?.addEventListener('submit', (e) => { 
+        e.preventDefault(); 
+        let name=document.getElementById('formName').value.trim(); 
+        let email=document.getElementById('formEmail').value.trim(); 
+        let msg=document.getElementById('formMsg').value.trim(); 
+        if(!name||!email||!msg) { 
+            showToast('Fill all required fields'); 
+            return; 
+        } 
+        let subject=`Inquiry from ${name}`; 
+        let body=`Name: ${name}\nEmail: ${email}\nMessage: ${msg}`; 
+        window.location.href=`mailto:contactsteeltech@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`; 
+        
+        const successDiv = document.getElementById('formSuccess');
+        if(successDiv) {
+            successDiv.style.display = "block";
+            setTimeout(() => { successDiv.style.display = "none"; }, 5000);
+        }
+        showToast('Opening email client...'); 
+    });
+
+    // Navigation and Canvas Controls
+    const hamburger = document.getElementById('hamburger'); 
+    const navLinksEl = document.getElementById('navLinks'); 
+    const backBtn = document.getElementById('backToTop');
+
+    hamburger?.addEventListener('click',()=>{ 
+        navLinksEl.classList.toggle('active'); 
+        hamburger.classList.toggle('active'); 
+    });
+
+    window.addEventListener('scroll',()=>{ 
+        backBtn.classList.toggle('visible', window.scrollY>400); 
+    });
+
+    backBtn?.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+    document.querySelectorAll('.nav-links a').forEach(link=>{ 
+        link.addEventListener('click',(e)=>{ 
+            e.preventDefault(); 
+            let id=link.getAttribute('href').slice(1); 
+            let el=document.getElementById(id); 
+            if(el) el.scrollIntoView({behavior:'smooth'}); 
+            navLinksEl.classList.remove('active'); 
+            hamburger?.classList.remove('active');
+        }); 
+    });
+
+    // Particle Background
+    function initParticles() { 
+        let canvas=document.getElementById('particleCanvas'); 
+        if(!canvas) return; 
+        let ctx=canvas.getContext('2d'); 
+        let particles=[]; 
+        function resize(){ 
+            let hero=document.querySelector('.hero'); 
+            if(hero){canvas.width=hero.clientWidth;canvas.height=hero.clientHeight;} 
+        } 
+        function create(){ 
+            particles=[]; 
+            for(let i=0;i<70;i++) 
+                particles.push({
+                    x:Math.random()*canvas.width,
+                    y:Math.random()*canvas.height,
+                    vx:(Math.random()-0.5)*0.4,
+                    vy:(Math.random()-0.5)*0.4,
+                    r:Math.random()*2+1,
+                    alpha:Math.random()*0.4+0.2
+                }); 
+        } 
+        function draw(){ 
+            if(!ctx) return; 
+            ctx.clearRect(0,0,canvas.width,canvas.height); 
+            particles.forEach(p=>{ 
+                p.x+=p.vx; 
+                p.y+=p.vy; 
+                if(p.x<0)p.x=canvas.width; 
+                if(p.x>canvas.width)p.x=0; 
+                if(p.y<0)p.y=canvas.height; 
+                if(p.y>canvas.height)p.y=0; 
+                ctx.beginPath(); 
+                ctx.arc(p.x,p.y,p.r,0,Math.PI*2); 
+                ctx.fillStyle=`rgba(0, 188, 212, ${p.alpha})`; 
+                ctx.fill(); 
+            }); 
+            requestAnimationFrame(draw); 
+        } 
+        resize(); 
+        create(); 
+        draw(); 
+        window.addEventListener('resize',()=>{ resize(); create(); }); 
+    }
+
+    document.getElementById('themeToggle')?.addEventListener('click', toggleTheme);
+
+    document.addEventListener('DOMContentLoaded', () => { 
+        initEditorMode();
+        loadProducts(); 
+        initTheme(); 
+        loadGallery(); 
+        renderCategoryTabs(); 
+        initParticles(); 
+        initScrollReveal();
+    });
+</script>
+
+</body></html>
